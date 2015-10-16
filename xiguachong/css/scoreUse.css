@@ -1,0 +1,36 @@
+*{
+    font-family: "STXihei","Arial","Microsoft Yahei","Helve","Simsun,sans-self";
+    outline: none;
+}
+
+/**
+ * 页头
+ */
+.am-header{
+    background: #1dbcd2;
+}
+.am-header-title > span{
+    font-size: 1.8rem;
+}
+
+.rule-title{
+    font-size: 1.8rem;
+    display: block;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+
+}
+.rule-content{
+    font-size:1.6rem;
+    margin-left: 4rem;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.fenge {
+    width: 100%;
+    height: .1rem;
+    background: #ccc;
+}

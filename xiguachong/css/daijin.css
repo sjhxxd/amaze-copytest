@@ -1,0 +1,286 @@
+*{
+	font-family: "STXihei","Arial","Microsoft Yahei","Helve","Simsun,sans-self"; 
+	color: #fff;
+	outline: none;
+}
+:root{
+	background: #202020;
+}
+/**
+ * 页头
+ */
+.am-header{
+	background: #1dbcd2;    
+}    
+.am-header-title > span{      
+	font-size: 1.8rem;       
+}
+/**
+ * 内容块
+ */
+#content{
+	background: #f5f5f5;
+	height: 100%;
+}
+.used,.passed{
+	border: none;
+	color: #fff;
+}  
+.card{
+	width: 90%;
+	height: 10rem;
+	background: #fff;
+	margin: 1rem auto;
+	border-radius: .5rem;
+}
+.card > div:first-child{     /* 代金券头 */
+	background: #2BC0D4;
+	color: #fff;
+	border-radius: .5rem .5rem 0rem 0rem;
+	height: 70%;
+}
+.card > div:first-child p{     /* 演唱会代金券 */
+	margin: 1rem 0rem 0rem 1rem;
+	padding: .8rem 0rem 0rem .5rem;
+	font-size: 1.6rem;
+} 
+.card > div:first-child img{     /* logo */
+	width: 2.5rem;
+	height: 2.5rem;
+	float: right;
+	margin: 1rem 1rem 0rem 0rem;
+}
+.card > div:first-child span{     /* 代金券金额 */
+	font-size: 4.5rem;
+	float: right;
+	margin: -1rem 1rem 0rem 0rem;
+}
+.card > div:last-child{     /* 代金券底 */
+	background: #fff;   
+	border-radius: 0rem 0rem .5rem .5rem;
+}
+.card > div:last-child span{
+	font-size: 1.3rem; 
+	color: #a7a7a7; 
+}
+.card > div:last-child span:first-child{     /* 使用期限 */
+	float: left;
+	margin: .8rem 0 0 1rem;
+}
+.card > div:last-child span:nth-child(2){     /* 期限时间 */
+	display: inline-block;
+	margin-top: .9rem;
+}
+.card > div:last-child a:last-child{     /* 使用规则 */
+	float: right;
+	margin: -2.1rem 1rem 0rem 0rem;
+	color: #ff971a;
+}
+
+.card > div:last-child span:last-child{     /* 已使用 */
+	float: right;
+	margin: -2.1rem 1rem 0rem 0rem;
+	color: #ff971a;
+	font-size: 1.6rem;
+	color: #ccc;
+}
+
+/*
+ * 内容块样式
+ */
+#content {
+	background: #202020;
+}
+
+/* Tab选项卡 */
+.tab {
+	background: #202020;
+	text-align: center;
+	height: 3rem;
+}
+
+.tab a {
+	color: #fff;
+	font-size: 1.6rem;
+	display: inline-block;
+	padding: .1rem 1rem;
+	margin: 0rem 3%;
+	line-height: 3rem;
+}
+
+.tab a:first-child {
+	color: #1dbcd2;
+}
+
+.tab + div {
+	width: 100%;
+	height: .2rem;
+	background: #1dbcd2;
+}
+
+/* 推荐项目 */
+.inuse {
+	position: relative;
+}
+
+.inuse > img:first-child, /* 视频海报 */
+.inuse > img:nth-of-type(4) {
+	/* 概况海报 */
+	margin: 0rem auto;
+}
+
+.inuse > img:nth-child(2), /* 视频蒙版 */
+.inuse > img:nth-child(3), /* 播放按钮 */
+.inuse > img:nth-of-type(5), /* 图片蒙版 */
+.inuse > span:nth-of-type(1), /* 概况标题 */
+.inuse a img {
+	/* 支持按钮 */
+	position: absolute;
+	top: 0rem;
+	left: 50%;
+	transform: translate(-50%);
+	-webkit-transform: translate(-50%);
+	-ms-transform: translate(-50%);
+	-moz-transform: translate(-50%);
+	-o-transform: translate(-50%);
+}
+
+.inuse > img:nth-of-type(5) {
+	/* 图片蒙版 */
+	display: none;
+}
+
+.inuse > img:nth-child(3) {
+	/* 播放按钮 */
+	width: 6rem;
+	height: 6rem;
+	display: none;
+}
+
+.video {
+	display: none;
+	position: absolute;
+	top: 0rem;
+	left: 0rem;
+}
+
+.inuse > span:nth-of-type(1) {
+	/* 概况标题 */
+	color: #fff;
+	font-size: 1.8rem;
+	margin-top: 8%;
+	border-bottom: .1rem solid #ccccce;
+	display: none;
+}
+
+.intro {
+	/* 概况内容 */
+	width: 100%;
+	text-align: center;
+	font-size: 1.6rem;
+	color: #fff;
+	position: absolute;
+	left: 0rem;
+	top: 0rem;
+	margin-top: 8%;
+	display: none;
+}
+
+.intro img {
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+}
+
+.intro span:nth-of-type(1),
+.intro span:nth-of-type(2) {
+	margin-right: 7%;
+}
+
+.inuse a img {
+	width: 4.48rem;
+	height: 5.12rem;
+	margin-top: 5%;
+	display: none;
+}
+
+/* 项目排行样式 */
+.used-poster, .success-poster {
+	min-width: 8rem;
+	min-height: 12rem;
+}
+
+.used-title, .success-title {
+	font-size: 1.8rem;
+	color: #ccc;
+	margin-right: 1rem;
+	margin-top: .5rem;
+}
+
+.used-content {
+	font-size: 1.2rem;
+	margin-top: -.1rem;
+	margin-bottom: .1rem;
+}
+
+.used-content span {
+	margin-right: 1rem;
+	font-size: 1.4rem;
+	color: #999;
+}
+
+.used-star {
+	margin-top: 1.5rem;
+	width: 1.2rem;
+	height: 1.2rem;
+}
+
+.used-support {
+	position: absolute;
+	bottom: -.5rem;
+	right: 1rem;
+	margin-left: 2.5rem;
+	font-size: 1.8rem;
+	color: #1dbcd2;
+}
+
+.used-jiantou, .success-jiantou {
+	width: 1.2rem;
+	height: 1.2rem;
+	position: absolute;
+	top: 1rem;
+	right: .7rem;
+}
+
+/* 最新项目样式 */
+.passed {
+	background: #202020;
+}
+
+.passed-poster {
+	margin: 0rem auto;
+}
+
+.passed-content {
+	text-align: center;
+}
+
+.passed-content span {
+	color: #ccc;
+	font-size: 1.4rem;
+	margin-right: 1rem;
+}
+
+.passed-title {
+	display: block;
+	padding-top: 1rem;
+	padding-bottom: .5rem;
+}
+
+.passed-support, .success-ok {
+	color: #1dbcd2;
+	display: block;
+	font-size: 1.8rem;
+	padding-top: .5rem;
+	padding-bottom: 1rem;
+}
